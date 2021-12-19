@@ -42,7 +42,7 @@ public final class FrameworkZips {
     public static final String SDK = Integer.toString(Build.VERSION.SDK_INT);
 
     private static final File ONLINE_FILE = new File(XposedApp.getInstance().getCacheDir(), "framework.json");
-    private static final String ONLINE_URL = "http://dl-xda.xposed.info/framework.json";
+    private static final String ONLINE_URL = "https://dl-xda.xposed.info/framework.json";
 
     public enum Type {
         INSTALLER(R.string.install_update, R.string.framework_install, R.string.framework_install_recovery),
