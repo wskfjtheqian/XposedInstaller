@@ -575,7 +575,7 @@ public class StatusInstallerFragment extends Fragment {
         OnlineFrameworkZip zip = FrameworkZips.getOnline(title, type);
         new DownloadsUtil.Builder(context)
                 .setTitle(zip.title)
-                .setUrl(zip.url)
+                .setUrl(zip.url.replaceFirst("http://","https://"))
                 .setDestinationFromUrl(DownloadsUtil.DOWNLOAD_FRAMEWORK)
                 .setCallback(new DownloadFinishedCallback() {
                     @Override
